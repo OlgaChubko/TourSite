@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+	<link href="tourist/zip_styles/style.css" rel="stylesheet">
+	
+	<title>Туры</title>
+</head>
+<body>
+
+<header>
+	<div class="mainBg">
+		<div id="mainBg">
+			<div class="slog1">Поиск и сравнение цен по всем туроператорам!</div>
+			<div class="slog2">Мы объединили все самые нужные услуги в одном месте!</div>
+			<div class="slog3"><a class="btnSlog3">Как это работает</a></div>
+			<div class="logos"><img src="tourist/images/logotype/tour-logos-white.png"></div>
+		</div>
+	</div>
+
+			<div class="mainMenu">
+			<div class="conteiner">
+				<div class="logoMenu">
+					<a href="#" class="logo"><img src="tourist/images/logotype/logo.png"></a>
+				</div>
+
+				<div class="menuHelp">
+					<div class="menuTitle">Помощь</div>
+					<div class="menuList">
+						<div class="menuItem"><a href="#">О компании</a></div>
+						<div class="menuItem"><a href="#">Ответы на вопросы</a></div>
+						<div class="menuItem"><a href="#">Контакты</a></div>
+						<div class="menuItem"><a href="#">Лайфхаки</a></div>
+					</div>
+				</div>
+
+				<div class="menuTour">
+					<div class="menuTitle">Туры</div>
+					<div class="menuList">
+						<div class="menuItem"><a href="#">Горящие туры</a></div>
+						<div class="menuItem"><a href="#">Поиск туров</a></div>
+					</div>
+				</div>
+				
+				<div class="phone">
+					<div class="phoneTitle">(044) 238-84-83</div>
+					<div class="phones">
+						<div class="phoneNumber">+38(067) 159-97-97</div>
+						<div class="phoneNumber">+38(050) 442-88-82</div>
+						<div class="phoneNumber">
+							<a class="phoneBtn" href="#">Перезвоните мне</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="citySelect">
+					<div class="cityTitle">Город вылета</div>
+					<div class="select">
+						<input type="hidden">
+						<div class="constantCity">
+							<div class="constantCityValue">Киев</div>
+						</div>
+						<div class="citySelectContent">
+							<ul>
+								<li>Днепропетровск</li>
+								<li>Запорожье</li>
+								<li>Киев</li>
+								<li>Львов</li>
+								<li>Одесса</li>
+								<li>Харьков</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="hightMainMenu"></div>
+</header>
+
+
+<div class="conteiner">
+	<form class="searchForm">
+		<div class="conditions">
+			<div class="section textSection conditionSection">
+					<input placeholder="Введите страну, регион или отель" class="description" type="text">
+				</div>
+				<div class="section datapickerWidth">
+					<input  type="text" placeholder="от" id="datepicker1" class="datapickerWrap">
+				</div>
+				<div class="section datapickerWidth">
+					<input  type="text" placeholder="до" id="datepicker2" class="datapickerWrap">
+				</div>
+				<div class="section submitButtonFound">
+				<button type="submit" class="buttonFound">Найти</button>
+			</div>
+		</div>
+
+				<ul class="countriesList">
+					<li class="allList">
+						<ul class="formList">
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/TR.png">
+				<span class="name">Турция</span><span class="price">от 5 770 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/ME.png">
+				<span class="name">Черногория</span><span class="price">от 8 565 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/GE.png">
+				<span class="name">Грузия</span><span class="price">от 9 496 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/GR.png"><span class="name">Греция</span>
+									<span class="price">от 9 758 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/EG.png"><span class="name">Египет</span>
+									<span class="price">от 9 810 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/AE.png"><span class="name">ОАЭ</span>
+									<span class="price">от 10 047 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/CY.png"><span class="name">Кипр</span>
+									<span class="price">от 10 219 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/SK.png"><span class="name">Словакия</span>
+									<span class="price">от 10 735 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/BG.png"><span class="name">Болгария</span>
+									<span class="price">от 12 027 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/JO.png"><span class="name">Иордания</span>
+									<span class="price">от 12 037 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/IT.png"><span class="name">Италия</span>
+									<span class="price">от 12 169 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/ES.png"><span class="name">Испания</span>
+									<span class="price">от 13 036 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/CZ.png"><span class="name">Чехия</span>
+									<span class="price">от 15 765 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/HR.png"><span class="name">Хорватия</span>
+									<span class="price">от 15 810 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/IL.png"><span class="name">Израиль</span>
+									<span class="price">от 16 180 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/LK.png"><span class="name">Шри Ланка</span>
+									<span class="price">от 17 578 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/MA.png"><span class="name">Марокко</span>
+									<span class="price">от 18 643 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/IN.png"><span class="name">Индия</span>
+									<span class="price">от 19 031 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/TH.png"><span class="name">Таиланд</span>
+									<span class="price">от 19 286 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/AT.png"><span class="name">Австрия</span>
+									<span class="price">от 20 379 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/TZ.png"><span class="name">Танзания</span>
+									<span class="price">от 21 358 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/MT.png"><span class="name">Мальта</span>
+									<span class="price">от 21 886 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/FR.png"><span class="name">Франция</span>
+									<span class="price">от 22 733 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/CN.png"><span class="name">Китай</span>
+									<span class="price">от 26 818 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/VN.png"><span class="name">Вьетнам</span>
+									<span class="price">от 29 350 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/MV.png"><span class="name">Мальдивы</span>
+									<span class="price">от 30 463 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/CU.png"><span class="name">Куба</span>
+									<span class="price">от 33 421 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/DO.png"><span class="name">Доминикана</span>
+									<span class="price">от 34 040 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/MX.png"><span class="name">Мексика</span>
+									<span class="price">от 36 178 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/MU.png"><span class="name">Маврикий</span>
+									<span class="price">от 40 356 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/JM.png"><span class="name">Ямайка</span>
+									<span class="price">от 42 977 грн</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/AD.png"><span class="name">Андорра</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/ID.png"><span class="name">Индонезия</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/TN.png"><span class="name">Тунис</span>
+							</span></li>
+							<li><span class="dots">
+				<img src="tourist/images/countries_flags/FI.png"><span class="name">Финляндия</span>
+							</span></li>
+						</ul>
+					</li>
+					<li class="item" style="background-image: url(tourist/images/countries_photos/egypt.jpg);">
+						<div class="name">Египет</div>
+					</li>
+					<li class="item" style="background-image: url(tourist/images/countries_photos/sarm.jpg);">
+						<div class="name">Шарм эль Шейх</div>
+					</li>
+					<li class="item" style="background-image: url(tourist/images/countries_photos/dubai.jpg);">
+						<div class="name">Дубаи</div>
+					</li>
+					<li class="item" style="background-image: url(tourist/images/countries_photos/dominicana.jpg);">
+						<div class="name">Доминикана</div>
+					</li>
+					<li class="item" style="background-image: url(tourist/images/countries_photos/turkey.jpg);">
+						<div class="name">Турция</div>
+					</li>
+					<li class="item" style="background-image: url(tourist/images/countries_photos/kemer.jpg);">
+						<div class="name">Кемер</div>
+					</li>
+					<li class="item" style="background-image: url(tourist/images/countries_photos/cuprus.jpg);">
+						<div class="name">Кипр</div>
+					</li>
+					<li class="item" style="background-image: url(tourist/images/countries_photos/spain.jpg);">
+						<div class="name">Испания</div>
+					</li>
+					<li class="item" style="background-image: url(tourist/images/countries_photos/gr.jpg);">
+						<div class="name">Греция</div>
+					</li>
+					<li class="item" style="background-image: url(tourist/images/countries_photos/marmaris.jpg);">
+						<div class="name">Мармарис</div>
+					</li>
+				</ul>
+	</form>
+</div>
+
+
+<div class="information">
+	<div class="conteiner">
+		<div class="informationNews">
+							<div><b>ОАЭ</b> вылеты есть каждый день, визу открываем <b>за 1 день!</b></div>
+
+			<div class="profitableTours">
+				<div>Самые дешевые туры</div><div>Турция от 5 770 грн на чел.</div>
+			</div>
+
+			<div class="countTouts">
+					<div>Найдено туров за сутки</div><div class="counter">3 578 678</div>
+				</div>
+		</div>
+	</div>
+
+<div class="weatherSection">
+	<div class="conteiner">
+		<div class="mail">
+			<form  class="subscribeForm"  method="post">
+				<input type="hidden"><div class="form email ">
+				<input  placeholder="Ваш e-mail" type="text"></div>
+				<button class="btnSubscribe">Подписаться</button>
+			</form>
+
+			<div class="descriptionMailText">
+					<div class="textLeft">Выгодные предложения, по лучшей цене и многое другое в нашей рассылке.</div>
+					<div class="textRight">Рассылка будет приходить два раза в неделю, по желанию вы можете отписаться.</div>
+				</div>
+
+		</div>
+		<div class="subscriber">
+			<iframe width="250" height="170" frameborder="0" style="border:0px solid #000000" scrolling="no"
+					src="http://pogodnik.com/xml/informer/ru/horizontal/01/zs%2FKxss%3D" >
+				<a href="http://pogodnik.com/10594-погода-в-нью-йорке"><img src="http://pogodnik.com/images/prognoz-pogody-200x240.png"></a></iframe>
+
+
+			<iframe width="250" height="170" frameborder="0" style="border:0px solid #000000" scrolling="no"
+					src="http://pogodnik.com/xml/informer/ru/horizontal/01/zsbMyw%3D%3D" >
+				<a href="http://pogodnik.com/1934-погода-в-киеве"><img src="http://pogodnik.com/images/prognoz-pogody-200x240.png"></a></iframe>
+		</div>
+	</div>
+</div>
+
+<div class="factoryTours">
+	<div class="conteiner">
+		<p>Что такое Фабрика Туров?</p>
+		<div class="icon"></div>
+		<div class="text">Фабрика туров – удобный онлайн сервис 
+путешественника, который поможет найти лучшее предложение по цене и 
+другим критериям. Вам не надо ехать в офис, не надо везти оплату за тур.
+ Вы настраиваете критерии поиска под свои потребности и в нужный момент,
+ не выходя из дома (офиса), просто оплачиваете долгожданный тур по 
+наилучшей цене. Наш поисковик поможет вам быстро подобрать и 
+забронировать предложение, которое вы так долго искали. Если в рабочие 
+дни у Вас не хватает времени для подбора тура, вы можете сделать это на 
+выходные, еще один плюс онлайн сервиса Фабрики Туров!</div>
+	</div>
+</div>
+
+
+<div class="onlineFactoryTours">
+	<div class="conteiner">
+		<p>Почему онлайн сервис Фабрика Туров TF.com.ua?</p>
+		<div class="columns">
+			<div class="column">
+				<div class="content">Мы заботимся о клиентах в режиме 24/7, 365 дней
+ в году и поможем решить любые вопросы по вашему отдыху. Операторы нашей
+ круглосуточной службы поддержки всегда рады будут помочь.</div>
+			</div>
+			<div class="column">
+				<div class="content">Наша поисковая система собирает самые 
+актуальные туры со всех туроператоров в режиме реального времени и в 
+полном доступном количестве. Вы не пропустите ни единого тура. И мы не 
+даем предпочтение какому-то одному тур оператору! Мы даем предпочтение 
+лучшим ценам!</div>
+			</div>
+			<div class="column">
+				<div class="content">Управляйте поиском своего отдыха собственными 
+руками, выставляйте требуемые критерии с помощью «смарт-фильтров» и не 
+доверяйте подбор лучшего отдыха никому.</div>
+			</div>
+			<div class="column">
+				<div class="content">Удобная система оплаты. Оплачивайте свой отдых 
+быстро, безопасно, не дайте выкупить кому-то другому ваш тур! Мы 
+работаем с самыми надежными платежными системами и банками.</div>
+			</div>
+		</div>
+
+		<p><b>Когда, куда и на сколько поехать?<br>Фабрика туров поможет вам определиться.</p>
+		<div class="buttons"><a href="#" class="buttonSearchTours">Начать поиск туров</a></div>
+	</div>
+</div>
+
+</div>
+
+	<div class="conteiner">
+		<ul class="countriesList">
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/TR.png">
+				<span>Турция</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/AT.png">
+				<span>Австрия</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/AD.png">
+				<span>Андорра</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/BG.png">
+				<span>Болгария</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/VN.png">
+				<span>Вьетнам</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/GR.png">
+				<span>Греция</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/GE.png">
+				<span>Грузия</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/DO.png">
+				<span>Доминикана</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/EG.png">
+				<span>Египет</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/IL.png">
+				<span>Израиль</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/IN.png">
+				<span>Индия</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/ID.png">
+				<span>Индонезия</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/JO.png">
+				<span>Иордания</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/ES.png">
+				<span>Испания</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/IT.png">
+				<span>Италия</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/CY.png">
+				<span>Кипр</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/CN.png">
+				<span>Китай</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/CU.png">
+				<span>Куба</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/MU.png">
+				<span>Маврикий</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/MV.png">
+				<span>Мальдивы</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/MT.png">
+				<span>Мальта</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/MA.png">
+				<span>Марокко</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/MX.png">
+				<span>Мексика</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/AE.png">
+				<span>ОАЭ</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/SK.png">
+				<span>Словакия</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/TH.png">
+				<span>Таиланд</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/TZ.png">
+				<span>Танзания</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/TN.png">
+				<span>Тунис</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/FI.png">
+				<span>Финляндия</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/FR.png">
+				<span>Франция</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/HR.png">
+				<span>Хорватия</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/ME.png">
+				<span>Черногория</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/CZ.png">
+				<span>Чехия</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/LK.png">
+				<span>Шри Ланка</span>
+			</li>
+			<li class="markFlag">
+				<img src="tourist/images/countries_flags/JM.png">
+				<span>Ямайка</span>
+			</li>
+		</ul>
+	</div>
+<footer>
+</footer>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+<script src="tourist/scripts/datapic.js"></script>
+</body>
